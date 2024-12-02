@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Books</title>
+    </head>
+    <body>
+        <script>
+
+            const bookData = {
+
+                    "books" : [
+                        {
+                            "title": "The Great GAtsby",
+                            "author": "F. Scott Fitzzgerals",
+                            "publicationYear": 1925,
+                            "genres": ["Fiction, Classics"]
+                        },
+
+                        {
+                            "title": "To kill a Mockingbird",
+                            "author": "Harper Lee",
+                            "publicationYear": 1960,
+                            "genres": ["Fiction", "Coming-of-age"]
+                        }
+                    ]
+            };
+
+            console.log("Title of the first book: " + bookData.books[0].title);
+            console.log("Author of the second book: " + bookData.books[1].author);
+
+            bookData.books.forEach(book => {
+                console.log("Genres of " + book.title + ": " + book.genres.join(", "));
+            });
+
+
+        </script>
+    </body>
+    </html>
